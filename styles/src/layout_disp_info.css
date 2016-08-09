@@ -829,6 +829,13 @@
 
 /* User menu */
 
+	.user-mail {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 40px;
+	}
+
 	.btn-menu-login-click + label{
 		display: block;
 	}
@@ -879,7 +886,7 @@
 		display: block;
 		height: 52px;
 		width: 100%;
-		padding: 17px 20px 0 20px;
+		padding: 15px 40px 0 40px;
 		 -webkit-box-sizing: border-box;
 		 -moz-box-sizing: border-box;
 		 box-sizing: border-box;
@@ -889,11 +896,23 @@
 	
 	.user-menu__item > a.menu-login__login:before {
 		display: inline-block;
-		margin-right: 10px;
-		width:14px;
-		height:19px;
+		margin-right: 12px;
+		width:16px;
+		height:20px;
 		content: "";
-		vertical-align: sub;
+		vertical-align: bottom;
+	}
+	
+	.user-menu__item > a.menu-login__login{
+		padding: 15px 40px 0 43px;
+	}
+	
+	.user-menu__item > a.menu-login__login span:first-child{
+		display: none;
+	}
+	
+	.user-menu__item > a.menu-login__login span:last-child{
+		display: inline;
 	}	
 
 	a#cart_dropdown__trigger:before {
@@ -902,22 +921,26 @@
 		width:20px;
 		height:19px;
 		content: "";
-		vertical-align: sub;
+		vertical-align: top;
 	}
 	a#cart_dropdown__trigger sup {
 		position: absolute;
-		top: 20px;
-		left: inherit;		
-		right: 20px;
+		top: 14px;
+		left: 160px;
+		right: inherit;
+	}
+
+	li.user-menu__item > a:before, li.user-menu__item > div > a:before {
+		margin-bottom: 0;
 	}
 	
 	.user-menu__item > a.user-menu__bookmarks:before {
-		width:15px;
-		height:20px;
+		width:20px;
+		height:18px;
 		display: inline-block;
 		margin-right: 10px;
 		content: "";
-		vertical-align: sub;
+		vertical-align: bottom;
 	}
 
 	.user-menu__profile:before {
@@ -926,8 +949,8 @@
 	}
 	
 	.user-menu__purchases:before {
-		width:28px;
-		height:17px;
+		width:22px;
+		height:18px;
 	}	
 	
 	#cart_dropdown__content{
@@ -935,6 +958,10 @@
 		left: 12%;
 		top: 45px;
 	}
+	
+	.b-cart-menu__goods {
+		max-height: 200px;
+    }	
 
 /* Product */
 	.product-info__info {
@@ -1272,7 +1299,7 @@
 
 
 @media screen and (min-width: 520px) and (max-width: 759px) {
-	.section_theme, .container_theme, .menu-login-cart, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
+	.section_theme, .container_theme, .catalog-slider__nav, .catalog-slider__cap, .breadcrumbs_theme, .menu-catalog,
 	.promoBlocks, .footer_theme .container_theme > div{
 		width: 480px;
 	}

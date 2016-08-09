@@ -66,7 +66,7 @@
 
 
 	.btn-menu-click-mobile:checked + label + div > .menu-click > .menu-click-dropdown{
-		background: #363636 url("../../../images/logo/logo-min.png") 40px 15px no-repeat;;
+		background: #363636 url("../../../images/logo/logo-min.png") 40px 15px no-repeat;
 	}
 
 	.btn-menu-click-mobile:checked + label + div{
@@ -150,6 +150,18 @@
 
 /* User menu */
 
+	.btn-menu-login-click:checked + label + div.not-logged-in{
+		background: #fff url("../../../images/logo/logo-min.png") 36px 26px no-repeat;			
+	}
+	
+	.user-mail {
+		color: #000;
+		font-size: 18px;
+		font-weight: 600;
+		text-align: left;
+	}
+	
+
 	.btn-menu-login-click + label:before{
 		background: transparent url("images/sprites.png") -1131px -10px no-repeat;	
 	}
@@ -166,40 +178,55 @@
 		border: 0px;
 	}	
 	
-	.menu-login-cart .user-menu__item a{
+	.menu-login-cart .user-menu__item > a,
+	.menu-login-cart .user-menu__item > div > a{
 		background: #fff;
 		color: #333;
 		font-size: 18px;
 		font-weight: 200;
+		text-align: left;
 	}
 
-	.menu-login-cart .user-menu__item:first-child a{
-		border-top: 0;
-	}	
+	.menu-login-cart .user-menu__item a:hover,
+	.menu-login-cart .user-menu__item a.active{
+		background: #ffb800;
+		font-weight: 600;
+	}
 
+	.user-menu__item >  a.menu-login__login:before{
+		background: transparent url("images/sprites.png")-1105px -10px no-repeat;
+	}
 	
-	.menu-login-cart .user-menu__item a:hover{
-		background: #efece7;
+	.user-menu__item >  a.menu-login__login:hover:before,
+	.user-menu__item >  a.menu-login__login.active:before  {
+		background: transparent url("images/sprites.png")-1079px -10px no-repeat;
 	}
-
-	.user-menu__item >  a.menu-login__login:before, .user-menu__item >  a.menu-login__login:hover:before {
-		background: transparent url("images/sprites.png")-426px -10px no-repeat;
-	}	
 
 	a#cart_dropdown__trigger:before{
 		background: transparent url("images/sprites.png") -1548px -10px no-repeat;
 	}
 	
-	a#cart_dropdown__trigger:hover:before {
+	a#cart_dropdown__trigger:hover:before,
+	a#cart_dropdown__trigger.active:before{
 		background: transparent url("images/sprites.png") -1520px -10px no-repeat;
 	}	
 
-	.user-menu__item > a.user-menu__bookmarks:before, .user-menu__item >  a.user-menu__bookmarks:hover:before {
-		background: transparent url("images/sprites.png") -450px -10px no-repeat;
+	.user-menu__item > a.user-menu__bookmarks:before{
+		background: transparent url("images/sprites.png") -1187px -10px no-repeat;
 	}
+	
+	.user-menu__item >  a.user-menu__bookmarks:hover:before,
+	.user-menu__item >  a.user-menu__bookmarks.active:before {
+		background: transparent url("images/sprites.png") -1157px -10px no-repeat;
+	}	
 
-	.user-menu__purchases:before, .user-menu__purchases:hover:before {
-		background: transparent url("images/sprites.png") -505px -10px no-repeat;
+	.user-menu__purchases:before{
+		background: transparent url("images/sprites.png") -1366px -10px no-repeat;
+	}
+	
+	.user-menu__purchases:hover:before,
+	.user-menu__purchases.active:before{
+		background: transparent url("images/sprites.png") -1334px -10px no-repeat;
 	}	
 
 /* Cart */

@@ -685,6 +685,10 @@ a#cart_dropdown__trigger:before{
     vertical-align: top;	
 }
 
+.user-menu__item > a.menu-login__login span:last-child{
+		display: none;
+}	
+
 .user-menu__bookmarks:before{
 	width:20px;
 	height:18px;
@@ -702,6 +706,10 @@ a#cart_dropdown__trigger:before{
 	float: right;
 	margin-top: 70px;
 	position: relative;
+}
+
+.user-mail{
+	display: none;
 }
 
 li.user-menu__item > a,
