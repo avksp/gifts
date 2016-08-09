@@ -466,23 +466,24 @@
 						<form>
 							<div class="b-filter-body__select select-gifts">
 								<label>Для кого</label>
-								<select class="chosen">
-									<option value="her">Для нее</option>
+								<select class="cs-select">
+									<option value="her" selected>Для нее</option>
 									<option value="he">Для него</option>
-									<option value="love">Любимым</option>
+									<option value="love">Любимым11111111111111111111111111</option>
 									<option value="femaly">Семье</option>
 									<option value="work">Коллегам</option>
 									<option value="teen">Подросткам</option>
 									<option value="kids">Детям</option>									
 								</select>
 							</div>
+				
 							<div class="b-filter-body__select select-gifts">
 								<label>Повод</label>
-								<select class="chosen">
-									<option>8 марта</option>
-									<option>23 февраля</option>
-									<option>День рождения</option>
-									<option>Новоселье</option>
+								<select class="cs-select">
+									<option value="mart8" selected>8 марта</option>
+									<option value="fev23">23 февраля</option>
+									<option value="dr">День рождения</option>
+									<option value="nov">Новоселье</option>
 								</select>
 							</div>
 							<div class="b-filter-body__slider slider-gifts">
@@ -806,9 +807,17 @@
 <!--		<script src="../scripts/libs/floatlabels.js"></script> -->
 		<script src="../scripts/main.js"></script>
 		<script src="../scripts/custom.js"></script>		
-		<script src="../scripts/libs/chosen.jquery.min.js"></script>
 		<script src="../scripts/libs/masked-input.js"></script>
-		<script src="../scripts/libs/jquery-ui.min.js"></script>			
+		<script src="../scripts/libs/jquery-ui.min.js"></script>
+		<script src="../scripts/libs/classie.js"></script>
+		<script src="../scripts/libs/selectFx.js"></script>
+		<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
+		</script>					
 <!--		
 		<script src="../scripts/libs/jquery.fancytree-all.js"></script>
 		<script src="../scripts/libs/fotorama.js"></script>

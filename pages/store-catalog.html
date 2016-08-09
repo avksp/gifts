@@ -27,7 +27,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="format-detection" content="address=no">
 	<!-- SEO-->
-	<title>Каталог магазина Infoskills</title>
+	<title>Каталог магазина Gifts</title>
 	<link href="../images/icons/favicon.ico" rel="shortcut icon">
 	<!--[if lt IE 9]> 
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -90,7 +90,7 @@
 											
 											<li class="cart-menu__goods-item order-item">
 												<div class="order-item__img">
-													<img src="../images/pages/catalog/item2.jpg" title="психология отношений">
+													<img src="../images/pages/catalog/item2.jpg" title="">
 												</div>						
 												<div class="order-item__name"><span>Оооочееееннь длинноооеназваниееееедлинноооеназваниееееедлинноооеназваниеееее</span></div>
 												<div class="order-item__cost price_item"><span class="price__number">133333999.00</span><span class="price__thinsp">&nbsp;</span><span class="price__rubl">руб.</span></div>
@@ -175,7 +175,7 @@
 		
 							<ul class="menu-click-list">
 								<li class="menu__item with-submenu menuparent">
-									<a href="#">
+									<a href="javascript:void(0);">
 										<span>Кому дарить?</span>
 									</a>	
 									<ul class="submenu">
@@ -217,7 +217,7 @@
 									</ul>
 								</li>
 								<li class="menu__item with-submenu menuparent">
-									<a href="#">
+									<a href="javascript:void(0);">
 										<span>По поводу</span>
 									</a>	
 									<ul class="submenu">
@@ -244,7 +244,7 @@
 									</ul>
 								</li>
 								<li class="menu__item with-submenu menuparent">
-									<a href="#">
+									<a href="javascript:void(0);">
 										<span>По интересам</span>
 									</a>	
 									<ul class="submenu">
@@ -321,7 +321,7 @@
 									</ul>
 								</li>
 								<li class="menu__item with-submenu menuparent">
-									<a href="#">
+									<a href="javascript:void(0);">
 										<span>По стилям</span>
 									</a>	
 									<ul class="submenu">
@@ -621,7 +621,7 @@
 					<div class="b-filter-catalog">
 						<div class="b-filter-catalog__select select-gifts">
 							<label>Упорядочить по:</label>
-							<select class="chosen">
+							<select class="cs-select">
 								<option value="price-up">цене (по возрастанию)</option>
 								<option value="price-down">цене (по убыванию)</option>
 							</select>
@@ -961,9 +961,17 @@
 <!--		<script src="../scripts/libs/floatlabels.js"></script> -->
 		<script src="../scripts/main.js"></script>
 		<script src="../scripts/custom.js"></script>		
-		<script src="../scripts/libs/chosen.jquery.min.js"></script>
 		<script src="../scripts/libs/masked-input.js"></script>
-		<script src="../scripts/libs/jquery-ui.min.js"></script>			
+		<script src="../scripts/libs/jquery-ui.min.js"></script>
+		<script src="../scripts/libs/classie.js"></script>
+		<script src="../scripts/libs/selectFx.js"></script>
+		<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx(el);
+				} );
+			})();
+		</script>
 <!--		
 		<script src="../scripts/libs/jquery.fancytree-all.js"></script>
 		<script src="../scripts/libs/fotorama.js"></script>

@@ -1,12 +1,5 @@
 //	Scroll to top
 
-$(window).scroll(function(){
-  var $scrollup = $('.back-to-top');
-  if ($(this).scrollTop() > 120) { $scrollup.fadeIn(); $('header').addClass("sticky1"); }
-  else { $scrollup.fadeOut(); $('header').removeClass("sticky1"); }
-  
-});
-
 jQuery('.back-to-top').click(function () {
   jQuery("html, body").animate({
 	  scrollTop: 0
@@ -35,10 +28,26 @@ $(document).click(function (e){ // событие клика по веб-док�
 });
 
 
-//Slider
-
 $(window).load(function (){
-	$('.chosen').chosen();
+	$('a.plus-qty').click(function() {
+        var $qty = $(this).next("input.cart-item__qty-num").val();
+        var $qty_num = parseFloat($qty);
+        $qty_num = $qty_num + 1;
+        if($qty_num >= 1){ $(this).next("input.cart-item__qty-num").val($qty_num.toString()); }
+    });
+    
+	$('a.minus-qty').click(function() {
+        var $qty = $(this).prev("input.cart-item__qty-num").val();
+        var $qty_num = parseFloat($qty);
+        $qty_num = $qty_num - 1;        
+        if($qty_num >= 1){ $(this).prev("input.cart-item__qty-num").val($qty_num.toString()); }
+    });    
+		
+});
+
+
+//Slider
+$(window).load(function (){
 	$("#slider-gifts__ui").slider({
 	  range: true,
 	  min: 0,

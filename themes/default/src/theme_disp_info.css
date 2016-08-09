@@ -1,11 +1,72 @@
 /* Diffrent display layout styles */
 
+@media screen and (max-width: 1299px) {
+
+	a#cart_dropdown__trigger{
+		text-align: left;
+	}
+	
+	.user-menu__bookmarks{
+		text-align: left;
+	}
+	
+/* Promo */
+	.ital_font, a.ital_font {
+		font-size: 17px;
+	}
+
+	.promo-item .promo-item__title a span:last-child {
+		font-size: 50px;
+	}		
+
+	.promo-item:nth-child(2) .promo-item__title a span:last-child,
+	.promo-item:nth-child(3) .promo-item__title a span:last-child{
+		font-size: 40px;
+	}
+	
+/* Catalog */
+
+	.slidedown .submenu.active {
+		background: #fff;
+		border-radius: 6px;
+		-webkit-box-shadow: 0px 5px 18px 0px rgba(104, 104, 104, 0.75);
+		-moz-box-shadow: 0px 5px 18px 0px rgba(104, 104, 104, 0.75);
+		box-shadow: 0px 5px 18px 0px rgba(104, 104, 104, 0.75);
+	}	
+  
+}
+
+
+@media screen and (min-width: 760px) and (max-width: 999px) {
+
+/* Promo */
+	.ital_font, a.ital_font {
+		font-size: 15px;
+	}
+
+	.promo-item .promo-item__title a span:last-child {
+		font-size: 40px;
+	}		
+
+	.promo-item:nth-child(2) .promo-item__title a span:last-child,
+	.promo-item:nth-child(3) .promo-item__title a span:last-child{
+		font-size: 30px;
+	}
+	
+/* Cart */
+	
+	.cart-item__price{
+		text-align: right;
+	}
+	
+}
+
 
 @media screen and (max-width: 759px) {
 
 
 	.btn-menu-click-mobile:checked + label + div > .menu-click > .menu-click-dropdown{
-		background: #363636 url("../../../images/logo/logo-w.png") 40px 15px no-repeat;;
+		background: #363636 url("../../../images/logo/logo-min.png") 40px 15px no-repeat;;
 	}
 
 	.btn-menu-click-mobile:checked + label + div{
@@ -90,15 +151,15 @@
 /* User menu */
 
 	.btn-menu-login-click + label:before{
-		background: transparent url("images/sprites.png") -426px -10px no-repeat;	
+		background: transparent url("images/sprites.png") -1131px -10px no-repeat;	
 	}
 	
 	.btn-menu-login-click:checked + label + div{
-		background: rgba(54,54,54,0.9);
+		background: rgba(255,255,255,1);
 	}
 
 	.btn-menu-login-click:checked + label:before{
-		background: transparent url("images/sprites.png") -808px -10px no-repeat;
+		background: transparent url("images/sprites.png") -1053px -10px no-repeat;
 	}
 
 	.menu-login-cart .user-menu__item{
@@ -106,12 +167,10 @@
 	}	
 	
 	.menu-login-cart .user-menu__item a{
-		background: #f7f5f3;
+		background: #fff;
 		color: #333;
-		font-size: 13px;
-		text-transform: uppercase;
-		font-weight: bold;
-		border-top: 1px solid #efece7;
+		font-size: 18px;
+		font-weight: 200;
 	}
 
 	.menu-login-cart .user-menu__item:first-child a{
@@ -127,9 +186,13 @@
 		background: transparent url("images/sprites.png")-426px -10px no-repeat;
 	}	
 
-	a#cart_dropdown__trigger:before, a#cart_dropdown__trigger:hover:before {
-		background: transparent url("images/sprites.png") -475px -10px no-repeat;
+	a#cart_dropdown__trigger:before{
+		background: transparent url("images/sprites.png") -1548px -10px no-repeat;
 	}
+	
+	a#cart_dropdown__trigger:hover:before {
+		background: transparent url("images/sprites.png") -1520px -10px no-repeat;
+	}	
 
 	.user-menu__item > a.user-menu__bookmarks:before, .user-menu__item >  a.user-menu__bookmarks:hover:before {
 		background: transparent url("images/sprites.png") -450px -10px no-repeat;
