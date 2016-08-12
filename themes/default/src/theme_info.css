@@ -91,6 +91,35 @@ a.btn_grey:hover, a.btn_grey:focus,
 	border: 2px solid #cf453c;
 }
 
+.btn_greys{
+	border-radius: 6px;
+	color: #000;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 200;
+	background: #ebebed;
+	text-transform: none;
+}
+
+.btn_greys:hover{
+	text-decoration: underline;
+}
+
+.btn_yellow{
+	border-radius: 6px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 200;
+	background: #ffb800;
+	text-transform: none;		
+}
+
+.btn_yellow:hover{
+	color: #000;
+	background: #ebebed;
+}
+
 .btn.blue{
 	color: #00c4e0;	
 	border: 2px solid #00c4e0;
@@ -1511,9 +1540,9 @@ a.catalog-item__del-button.i-buck:focus:before{
 .profile-info__adress-click:checked + label:before,
 .checkbox:checked + label:before{
 	border: 1px solid #cf453c;
-	background: #cf453c;
+	background: #cf453c url("images/sprites.png") -1692px -7px no-repeat;
 	color: #fff;
-	content: "\2714";
+	content: "";
 }
 
 /* ---------------  Profile info password --------------- */
@@ -1544,6 +1573,99 @@ a.catalog-item__del-button.i-buck:focus:before{
 }
 
 
+/* ---------------  Checkout  ----------------- */
+
+.checkout-header__step{
+	border-bottom: 1px solid #ccc;
+}
+
+.checkout-header__step li {
+    text-align: right;
+}
+
+.checkout-header__step li span {
+    color: #666;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.checkout-header__step li span.active {
+    color: #cf453c;
+    font-weight: 600;
+}
+
+.checkout-header__step li span.active:after {
+    background: #cf453c;
+}
+
+
+.checkout-step{
+	
+}
+
+.checkout-step h3{
+	font-weight: 800;
+	font-size: 18px;
+	color: #000;
+}
+
+.checkout-edit-adress.i-change:before{
+	background: transparent url("images/sprites.png") -734px -10px no-repeat;	
+}
+
+.checkout-edit-adress.i-change:hover:before{
+	background: transparent url("images/sprites.png") -707px -10px no-repeat;	
+}
+
+
+.checkout-step .profile-info__buttons a{
+	font-weight: 600;
+	font-size: 10px;
+	color: #999999;
+	text-transform: uppercase;	
+}
+
+
+.checkout-delivery{
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    color: #000;
+}
+
+.checkout-delivery__name{
+	color: #000;
+	font-size: 14px;
+}
+
+.checkout-delivery__dec{
+	color: #666;
+	font-size: 13px;	
+}
+
+.checkout-delivery__cost{
+	text-align: right;
+	color: #000;
+	font-size: 14px;
+	font-weight: 800;	
+}
+
+
+.checkout-payment{
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    color: #000;
+}
+
+.checkout-payment__name{
+	color: #000;
+	font-size: 14px;
+}
+
+.checkout-payment__dec{
+	color: #666;
+	font-size: 13px;	
+}
 
 /* ---------------  --------------- Footer ---------------  --------------- */
 

@@ -98,6 +98,17 @@ img:focus {
 	display: block;		
 }
 
+.btn_greys{
+	width: 220px;
+	height: 50px;
+}
+
+.btn_yellow{
+	width: 220px;
+	height: 50px;	
+	padding-top: 14px;
+}
+
 .title-line:before,
 .title-line:after{
 	content: "";
@@ -1791,6 +1802,211 @@ div.cs-select.cs-active .cs-options {
 	margin-top: 10px;
 }
 
+
+/* ---------------  Profile info  --------------- */
+
+.profile-info{
+	margin-top: 40px;	
+}
+
+.profile-info div:not(:last-child){
+	margin-bottom: 30px;
+}
+
+.profile-info div > span{
+	display: inline-block;
+}
+
+.profile-info div > span:first-child{
+	width: 76px;
+}
+
+.profile-info div > span:last-child{
+	
+}
+
+.profile-info__buttons {
+	margin-top: 35px;
+	padding-top: 18px;
+}
+
+.profile-info__buttons a{
+	display: inline-block;
+	margin-bottom: 18px;
+	padding-top: 12px;
+	margin-right: 20px;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ 	width: 220px;
+}
+
+.profile-info__buttons a:before{
+	vertical-align: middle;
+}
+
+/* ---------------  Profile info edit --------------- */
+
+.profile-info-edit{
+	margin-top: 35px;	
+}
+
+.profile-info-edit__form{
+	max-width: 475px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.profile-info-edit__form .label-floatlabel{
+	display: none!important;
+}
+
+.profile-info-edit__form input{
+	height: 42px;
+	display: block;
+	margin-top: 10px;	
+	margin-bottom: 20px;
+	padding:5px;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+	width: 100%;
+}
+
+.profile-info-edit__form button{
+	width: 227px;
+	height: 42px;
+	display: inline-block;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+	padding-top: initial;
+}
+
+.profile-info-edit__form-sub{
+	margin-left: 21px;
+}
+
+
+/* ---------------  Profile adress --------------- */
+
+.profile-info__adress{
+	margin-top: 40px;
+	padding-bottom: 40px;
+}
+
+.profile-info__adress-adress{
+	display: inline-block;
+	margin-left: 20px;	
+}
+
+.profile-info__adress-adress span{
+	display: inline-block;
+	margin-right: 5px;	
+}
+
+div.profile-info__adress-adress > span:first-child{
+	width: auto;
+}
+
+.profile-info__adress-adress span:last-child{
+	display: block;
+	margin-top: 5px;		
+}
+
+.profile-info__adress-adress span:nth-child(2):before,
+.profile-info__adress-adress span:nth-child(3):before{
+	content: "•";
+	display: inline-block;
+	margin-right: 5px;	
+}
+
+.profile-info__adress-click + label:before,
+.checkbox + label:before{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+	content: "";
+}
+
+div.profile-info-edit__form-select{
+	display: block;
+	margin-top: 10px;	
+	margin-bottom: 20px;
+	padding:5px 0;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+	width: 100%;
+}
+
+.profile-info-edit__form-select .cs-select,
+.profile-info-edit__form-select .cs-placeholder{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+	width: 100%;
+}
+
+.profile-info-edit__form-select .cs-select{
+	margin-top: 10px;		
+}
+
+.profile-info-edit__form-wr{
+	width: 30%;
+	display: inline-block;
+	margin-right: 4.2%;
+}
+
+.profile-info-edit__form-wr:nth-child(6){
+	margin-right: 0;
+}
+
+/* ---------------  Profile info password --------------- */
+
+.profile-info-password{
+	margin-top: 35px;	
+}
+
+.profile-info-password__form{
+	max-width: 475px;
+	width: 100%;
+}
+
+.profile-info-password__form .label-floatlabel{
+	display: none!important;
+}
+
+.profile-info-password__form input{
+	height: 42px;
+	display: block;
+	margin-top: 10px;	
+	margin-bottom: 20px;
+	padding:5px;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+	width: 100%;
+}
+
+.profile-info-password__form button{
+	width: 227px;
+	height: 42px;
+	display: inline-block;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+	margin-top: 20px;
+	padding-top: 0;
+}
+
+.profile-info-password__form-sub{
+	margin-right: 21px;
+}
+
+
 /* --------------- Cart --------------- */
 
 .cart-container{
@@ -2040,207 +2256,119 @@ a.catalog-item__del-button.i-buck:before{
 }
 
 
-/* ---------------  Profile info  --------------- */
+/* ---------------  Checkout  ----------------- */
 
-.profile-info{
-	margin-top: 40px;	
+.mobile{
+	display: none;
 }
 
-.profile-info div:not(:last-child){
-	margin-bottom: 30px;
+.checkout{
+	width: 700px;
+	margin: 100px auto;
 }
 
-.profile-info div > span{
-	display: inline-block;
+.checkout-header__step{
+	margin-bottom: 45px;
+	padding-bottom: 25px;	
 }
 
-.profile-info div > span:first-child{
-	width: 76px;
+.checkout-header__step li {
+    display: block;
+    float: left;
 }
 
-.profile-info div > span:last-child{
-	
+.checkout-header__step li:nth-child(2) {
+    width: 265px;
 }
 
-.profile-info__buttons {
-	margin-top: 35px;
-	padding-top: 18px;
+.checkout-header__step li:nth-child(3) {
+    width: 280px;
 }
 
-.profile-info__buttons a{
-	display: inline-block;
-	margin-bottom: 18px;
-	padding-top: 12px;
-	margin-right: 20px;
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
- 	width: 220px;
+.checkout-header__step li span{
+    display: block;
 }
 
-.profile-info__buttons a:before{
-	vertical-align: middle;
+.checkout-header__step li span:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: relative;
+    margin-top: 10px;
 }
 
-/* ---------------  Profile info edit --------------- */
-
-.profile-info-edit{
-	margin-top: 35px;	
+.checkout-step{
+	margin-bottom: 75px;
 }
 
-.profile-info-edit__form{
-	max-width: 475px;
-	width: 100%;
-	margin-bottom: 30px;
-}
-
-.profile-info-edit__form .label-floatlabel{
-	display: none!important;
-}
-
-.profile-info-edit__form input{
-	height: 42px;
-	display: block;
-	margin-top: 10px;	
-	margin-bottom: 20px;
-	padding:5px;
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
-	width: 100%;
-}
-
-.profile-info-edit__form button{
-	width: 227px;
-	height: 42px;
-	display: inline-block;
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
-	padding-top: initial;
-}
-
-.profile-info-edit__form-sub{
-	margin-left: 21px;
+.checkout-edit-adress{
+    display: block;
+    width: 17px;
+    height: 15px;
+    float: right;	
 }
 
 
-/* ---------------  Profile adress --------------- */
-
-.profile-info__adress{
+.checkout-delivery{
 	margin-top: 40px;
-	padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
-.profile-info__adress-adress{
+.checkout-delivery__img{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	margin-left: 20px;
 	display: inline-block;
-	margin-left: 20px;	
+	vertical-align: top;	
 }
 
-.profile-info__adress-adress span{
+.checkout-delivery__method{
+	width: 355px;
+    display: inline-block;
+}
+
+.checkout-delivery__method span{
+    display: block;
+    margin-bottom: 7px;
+}
+
+.checkout-delivery__cost{
 	display: inline-block;
-	margin-right: 5px;	
-}
-
-div.profile-info__adress-adress > span:first-child{
-	width: auto;
-}
-
-.profile-info__adress-adress span:last-child{
-	display: block;
-	margin-top: 5px;		
-}
-
-.profile-info__adress-adress span:nth-child(2):before,
-.profile-info__adress-adress span:nth-child(3):before{
-	content: "•";
-	display: inline-block;
-	margin-right: 5px;	
-}
-
-.profile-info__adress-click + label:before,
-.checkbox + label:before{
-	width: 15px;
-	height: 15px;
-	display: inline-block;
-	cursor: pointer;
 	vertical-align: top;
-	content: "";
+	width: 140px;
+	margin-left: 99px;
 }
 
-div.profile-info-edit__form-select{
-	display: block;
-	margin-top: 10px;	
-	margin-bottom: 20px;
-	padding:5px 0;
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
-	width: 100%;
+
+.checkout-payment{
+	margin-top: 40px;
+    padding-bottom: 40px;
 }
 
-.profile-info-edit__form-select .cs-select,
-.profile-info-edit__form-select .cs-placeholder{
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
-	width: 100%;
-}
-
-.profile-info-edit__form-select .cs-select{
-	margin-top: 10px;		
-}
-
-.profile-info-edit__form-wr{
-	width: 30%;
+.checkout-payment__img{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	margin-left: 20px;
 	display: inline-block;
-	margin-right: 4.2%;
+	vertical-align: top;	
 }
 
-.profile-info-edit__form-wr:nth-child(6){
-	margin-right: 0;
+.checkout-payment__method{
+	width: 355px;
+    display: inline-block;
 }
 
-/* ---------------  Profile info password --------------- */
-
-.profile-info-password{
-	margin-top: 35px;	
+.checkout-payment__method span{
+    display: block;
+    margin-bottom: 7px;
 }
 
-.profile-info-password__form{
-	max-width: 475px;
-	width: 100%;
-}
 
-.profile-info-password__form .label-floatlabel{
-	display: none!important;
-}
-
-.profile-info-password__form input{
-	height: 42px;
-	display: block;
-	margin-top: 10px;	
-	margin-bottom: 20px;
-	padding:5px;
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
-	width: 100%;
-}
-
-.profile-info-password__form button{
-	width: 227px;
-	height: 42px;
-	display: inline-block;
- -webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;
-	margin-top: 20px;
-	padding-top: 0;
-}
-
-.profile-info-password__form-sub{
-	margin-right: 21px;
+.checkout__buttons a.btn:first-child{
+	margin-right: 40px;
 }
 
 /* ---------------  --------------- Footer ---------------  --------------- */
