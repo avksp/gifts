@@ -1667,6 +1667,50 @@ a.catalog-item__del-button.i-buck:focus:before{
 	font-size: 13px;	
 }
 
+
+.checkout-cart__item{
+    border-bottom: 1px solid #ccc;
+	color: #000;    
+}
+
+.checkout-cart__qty span{
+	font-weight: 600;
+}
+
+.checkout-cart__cost{
+	font-weight: 800;
+	text-align: right;
+}
+
+.checkout-cart-footer{
+	text-align: right;
+	font-weight: 200;
+	color: #000;	
+}
+
+.checkout-cart-footer .num_product{
+	font-weight: 800;		
+}
+
+.checkout-cart-footer .price__number{
+	font-weight: 800;		
+}
+
+.checkout-sum{
+	text-align: right;
+	font-weight: 200;
+	color: #000;
+}
+
+.checkout-sum span{
+	font-weight: 800;	
+}
+
+.checkout__buttons{
+	text-align: center;	
+}
+
+
 /* ---------------  --------------- Footer ---------------  --------------- */
 
 .footer_theme{
