@@ -91,7 +91,8 @@ a.btn_grey:hover, a.btn_grey:focus,
 	border: 2px solid #cf453c;
 }
 
-.btn_greys{
+.btn_greys,
+.content_theme a.btn_greys{
 	border-radius: 6px;
 	color: #000;
 	font-size: 18px;
@@ -99,10 +100,14 @@ a.btn_grey:hover, a.btn_grey:focus,
 	font-weight: 200;
 	background: #ebebed;
 	text-transform: none;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-.btn_greys:hover{
-	text-decoration: underline;
+.btn_greys:hover,
+.content_theme .btn_greys:hover{
+	background: #d3d3d5;
+	color: #000;
 }
 
 .btn_yellow{
@@ -116,8 +121,7 @@ a.btn_grey:hover, a.btn_grey:focus,
 }
 
 .btn_yellow:hover{
-	color: #000;
-	background: #ebebed;
+	background: #e5a500;
 }
 
 .btn.blue{
@@ -248,16 +252,16 @@ a.btn_grey:hover, a.btn_grey:focus,
 
 .btn-menu-click-mobile + label:before,
 .btn-menu-click-mobile:indeterminate + label:before{
-	background: transparent url("images/sprites.png") -10px -10px no-repeat;	
+	background: transparent url("images/sprites.png") -1490px -10px no-repeat;	
 }
 
 .btn-menu-click-mobile + label:hover:before, .btn-menu-click-mobile:indeterminate + label:hover:before,
 .btn-menu-click-mobile + label:focus:before, .btn-menu-click-mobile:indeterminate + label:focus:before{
-	background: transparent url("images/sprites.png") -41px -10px no-repeat;
+	background: transparent url("images/sprites.png") -1430px -10px no-repeat;
 }
 
 .btn-menu-click-mobile:checked + label:before{
-	background: transparent url("images/sprites.png") -828px -9px no-repeat;
+	background: transparent url("images/sprites.png") -1053px -10px no-repeat
 }
 
 .btn-menu-click-mobile:checked + label:hover:before,
@@ -1791,50 +1795,50 @@ a.catalog-item__del-button.i-buck:focus:before{
 	font-size: 13px;
 }
 
-.content_theme h2, .content_theme h3,
-.content_theme h4, .content_theme h5, .content_theme h6{
+.content_theme.text_theme h2, .content_theme.text_theme h3,
+.content_theme.text_theme h4, .content_theme.text_theme h5, .content_theme.text_theme h6{
 	color: #000;
 	font-weight: 400;
 }
 
-.content_theme h1{
+.content_theme.text_theme h1{
 	font-size: 25px;	
 }
 
-.content_theme h2{
+.content_theme.text_theme h2{
 	font-size: 22px;
 }
 
-.content_theme h3{
+.content_theme.text_theme h3{
 	font-size: 18px;	
 }
 
-.content_theme h4{
+.content_theme.text_theme h4{
 	font-size: 16px;	
 }
 
-.content_theme h5,
-.content_theme h6{
+.content_theme.text_theme h5,
+.content_theme.text_theme h6{
 	font-size: 14px;	
 }
 
-.content_theme b,
-.content_theme strong{
+.content_theme.text_theme b,
+.content_theme.text_theme strong{
 	color: #000;
 	font-weight: 600;	
 }
 
-.content_theme ul li:before{
+.content_theme.text_theme ul li:before{
 	content: "-";
 	display: inline-block;
 }
 
-.content_theme a{
+.content_theme.text_theme a{
 	color: #666;
 	text-decoration: underline;	
 }
 
-.content_theme a:hover{
+.content_theme.text_theme a:hover{
 	color: #cf453c;	
 }
 
@@ -2062,7 +2066,7 @@ a.catalog-item__del-button.i-buck:focus:before{
 .i-checkbox + label:before{
 	border: 1px solid #d0d4d8;
 	background: #fff;
-	color: #0099cc;
+	color: #cf453c;
 	text-align: center;
 }
 
@@ -2071,11 +2075,11 @@ a.catalog-item__del-button.i-buck:focus:before{
 }
 
 .i-mail-big{
-	background: transparent url("images/sprites.png") -1369px -10px no-repeat;		
+	background: transparent url("images/sprites.png") -1840px -10px no-repeat;		
 }
 
 .i-ok{
-	background: transparent url("images/sprites.png") -2086px -10px no-repeat;		
+	background: transparent url("images/sprites.png") -1777px -10px no-repeat;		
 }
 
 .i-error{
@@ -2119,20 +2123,27 @@ a.catalog-item__del-button.i-buck:focus:before{
     line-height: 1.5em;	
 }
 
+.popup-content__desc{
+	font-size: 13px;
+	color: #28282c;
+    line-height: 1.5em;		
+}
+
 
 .popup-content__form__remember{
 	color: #333;
 }
 
 .popup-content__form__remember + a{
-	color: #0099cc;
+	color: #cf453c;
 }
 
 
 .popup-content__form__remember .i-checkbox:checked + label:before{
-	color: #fff;
-	border: 1px solid #00c4e0;
-	background: #00c4e0;
+	border: 1px solid #cf453c;
+    background: #cf453c url("images/sprites.png") -1692px -7px no-repeat;
+    color: #fff;
+    content: "";
 }
 
 .popup-content__buttons{

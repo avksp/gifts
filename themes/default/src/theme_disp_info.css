@@ -65,34 +65,78 @@
 @media screen and (max-width: 759px) {
 
 
-	.btn-menu-click-mobile:checked + label + div > .menu-click > .menu-click-dropdown{
-		background: #363636 url("../../../images/logo/logo-min.png") 40px 15px no-repeat;
+	.btn-menu-click-mobile:checked + label + div > .menu-click{
+		background: #fff url("../../../images/logo/logo-min.png") 36px 26px no-repeat;
 	}
 
 	.btn-menu-click-mobile:checked + label + div{
-		background: rgba(255,255,255,0.9);
+		background: rgba(255,255,255,1);
 	}
 
 	.menu-click-dropdown ul.submenu {
 		border-left: 0;
 	}
 	
+	.menu-click-dropdown li.menu__item a{
+		color: #333;
+	}
+	
 	.menu-click-dropdown li.menu__item > a:after,
 	.menu-click-dropdown li.menu__item > span:after{
-		background: transparent url("images/sprites.png") -407px -10px no-repeat;
+		background: transparent url("images/sprites.png") -877px -10px no-repeat;
 	}	
 
-	.menu-click-dropdown li.menu__item > a.active:after,
-	.menu-click-dropdown li.menu__item > span.active:after,
-	.menu-click-dropdown li.menu__item > a:active:after,
-	.menu-click-dropdown li.menu__item > span:active:after,
-	.menu-click-dropdown li.menu__item > a:focus:after,
-	.menu-click-dropdown li.menu__item > span:focus:after	{
-		content: "\2014";
-		background: none;
-		color: #ccc;
+	.menu-click-dropdown li.menu__item > a.active,
+	.menu-click-dropdown li.menu__item > span.active,
+	.menu-click-dropdown li.menu__item > a:active,
+	.menu-click-dropdown li.menu__item > span:active,
+	.menu-click-dropdown li.menu__item > a:focus,
+	.menu-click-dropdown li.menu__item > span:focus{
+		background: #ebebed;
 	}
 
+	.menu-click-dropdown li.menu__item > a.active + ul a,
+	.menu-click-dropdown li.menu__item > span.active + ul a,
+	.menu-click-dropdown li.menu__item > a:active + ul a,
+	.menu-click-dropdown li.menu__item > span:active + ul a,
+	.menu-click-dropdown li.menu__item > a:focus + ul a,
+	.menu-click-dropdown li.menu__item > span:focus + ul a{
+		background: #ebebed;
+	}
+
+
+	.menu-click-dropdown li.menu__item > a.active + ul a:hover,
+	.menu-click-dropdown li.menu__item > span.active + ul a:hover,
+	.menu-click-dropdown li.menu__item > a:active + ul a:hover,
+	.menu-click-dropdown li.menu__item > span:active + ul a:hover,
+	.menu-click-dropdown li.menu__item > a:focus + ul a:hover,
+	.menu-click-dropdown li.menu__item > span:focus + ul a:hover,
+	.menu-click-dropdown li.menu__item > a.active + ul a.active,
+	.menu-click-dropdown li.menu__item > span.active + ul a.active,
+	.menu-click-dropdown li.menu__item > a:active + ul a.active,
+	.menu-click-dropdown li.menu__item > span:active + ul a.active,
+	.menu-click-dropdown li.menu__item > a:focus + ul a.active,
+	.menu-click-dropdown li.menu__item > span:focus + ul a.active	{
+		background: #ffb800;
+		color: #cf453c;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+
+	.btn-menu-click-mobile:checked + label:before{
+		background: transparent url("images/sprites.png") -1053px -10px no-repeat;
+	}
+
+	.menu-main__list {
+		border-top: 1px solid #cccccc;
+	}
+
+	.menu-main__list a{
+		font-size: 13px;
+		color: #010101;
+	}
+	
 	/* Search */
 	
 	.search_click_slide > input + label{

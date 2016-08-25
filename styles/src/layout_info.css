@@ -711,7 +711,8 @@ li.user-menu__item > div > a{
 }
 
 .user-menu__item{
-	display: inline-block;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .user-menu__item > a:before{
@@ -994,7 +995,7 @@ div.cs-select > span:before{
 	top: 5px;
 	right: 39px;
     content: "";
-    z-index: 100;	
+    /*z-index: 100;	*/
 }
 
 div.cs-select > span:after {
@@ -2482,30 +2483,31 @@ a.catalog-item__del-button.i-buck:before{
     min-height: 336px;
 }
 
-.content_theme h1.title_page_theme{
+.content_theme.text_theme h1.title_page_theme{
 	margin-top: 0;
 	margin-bottom: 30px;
 }
 
-.content_theme h2, .content_theme h3, .content_theme h4, .content_theme h5, .content_theme h6{
+.content_theme.text_theme h2, .content_theme.text_theme h3, .content_theme.text_theme h4,
+.content_theme.text_theme h5, .content_theme.text_theme h6{
 	margin-bottom: 1em;
 }
 
-.content_theme p{
+.content_theme.text_theme p{
 	margin-bottom: 1em;
 	line-height: 1.5em;
 }
 
-.content_theme ul{
+.content_theme.text_theme ul{
 	margin-bottom: 1em;
 	line-height: 1.5em;	
 }
 
-.content_theme p + ul{
+.content_theme.text_theme p + ul{
 	margin-top: -1em;
 }
 
-.content_theme ul li:before{
+.content_theme.text_theme ul li:before{
 	margin-right: 5px;
 }
 
@@ -2855,8 +2857,8 @@ a.catalog-item__del-button.i-buck:before{
 }
 
 .i-ok{
-	width:49px;
-	height:40px;
+	width:53px;
+	height:44px;
 	display: inline-block;		
 }
 
@@ -2882,6 +2884,7 @@ a.catalog-item__del-button.i-buck:before{
 
 .fade.in {
     display: block;
+    overflow: auto;    
 }
 
 .popup {
@@ -2890,8 +2893,7 @@ a.catalog-item__del-button.i-buck:before{
     width: 320px;
     z-index: 1000;
     position: relative;
-    max-height: 450px;
-    overflow: auto;
+    height: 475px;
 	padding: 60px 40px 40px 40px;
 	margin: 0 auto 0 auto;
 }
@@ -2905,7 +2907,7 @@ a.catalog-item__del-button.i-buck:before{
 }
 
 .popup-content__form__desc{
-	margin-top: 90px;
+	margin-top: 120px;
 }
 
 .popup-content__form{
@@ -2927,6 +2929,10 @@ a.catalog-item__del-button.i-buck:before{
 	margin-bottom: 15px;
 }
 
+.popup-content__form__remember .i-checkbox:checked + label:before{
+	vertical-align: sub;
+}
+
 .popup-content__icon{
 	text-align: center;
 	margin: 60px auto 14px auto;
@@ -2936,14 +2942,28 @@ a.catalog-item__del-button.i-buck:before{
 	margin-top: 20px;
 }
 
+.popup-content__buttons button,
+.popup-content__buttons a{
+	width: 100%;
+}
+
 .popup-content__buttons button:first-child,
 .popup-content__buttons a:first-child{
 	margin-bottom: 10px;
 	padding-top: 0;
 }
 
-.popup-content__buttons a{
+.popup-content__buttons .btn_greys{
+	padding-top: 0;
+}
+
+.popup-content__buttons a,
+.popup-content__buttons a.btn_greys{
 	padding-top: 14px;
+}
+
+.reset-password .popup-content__buttons{
+	margin-top: 140px;
 }
 
 .popup__drop{
