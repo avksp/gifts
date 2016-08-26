@@ -140,57 +140,47 @@
 	/* Search */
 	
 	.search_click_slide > input + label{
-		border-top: 1px solid #ccc;
-		border-bottom: 1px solid #ccc;
-		color: #fff;
+		border: 0px;
 	}	
 
 	.btn-search-click + label:before{
-		background: transparent url("images/sprites.png") -2164px -10px no-repeat;
+		background: transparent url("images/sprites.png") -1305px -10px no-repeat;
 	}	
 
 	.search-click-slide-holder{
-		background: #4a4a4a;
-		border: 1px solid #4a4a4a;
+		background: #fff;
+		border: 1px solid #ccc;
 	}
 	
 	.search-click-slide-holder button.btn_search {
-		background: transparent url("images/sprites.png") -2164px -10px no-repeat;
+		background: transparent url("images/sprites.png") -1276px -10px no-repeat;
 	}	
 
 	.btn_close-click + label {
-		background:  #4a4a4a;
+		background:  transparent;
 		border: 0px;
 		color: #fff;
 	}
 	
 	.btn_close-click + label:before {
-		background: transparent url("images/sprites.png") -805px -7px  no-repeat;
+		background: transparent url("images/sprites.png") -933px -10px  no-repeat;
 		border: 0px;
 	}	
 
-	.search_click_slide > input.btn_close-click + label {
-		border-top: 1px solid #4a4a4a;
-		border-bottom: 1px solid #4a4a4a;
-		color: #fff;
+	.search_click_slide > input.btn-search-click:checked + label + input + label {
+		border-left: 1px solid #d0d4d8;
+		color: #000;
 	}	
-
-	.btn_close-click + label:hover,
-	.btn_close-click + label:focus{
-		border: 0px;
-		border-left: 0;
-	}
 
 	.btn_close-click + label:hover:before,
 	.btn_close-click + label:focus:before{
-		background: transparent url("images/sprites.png") -805px -7px no-repeat;
+		background: transparent url("images/sprites.png") -1247px -10px no-repeat;
 	}
 
-	.btn_close-click + label:hover + div > form > .search-click-slide-holder,
-	.btn_close-click + label:focus + div > form > .search-click-slide-holder{
-		border: 1px solid #4a4a4a;
-		border-right: 0px;
+	.search_click_slide > input.btn-search-click:checked + label + input + label:before{
+		background: transparent url("images/sprites.png") -933px -10px no-repeat;
 	}
+
 
 /* User menu */
 
@@ -308,14 +298,64 @@
 		font-weight: normal;
 		color: #000;
 	}
+
+/* Filters */
+
+	.b-filter{
+		background: #ebebed;
+	}
+
+	.b-filter .b-title span{
+		background: #ebebed;
+	}
+
+	.btn-filter + label{
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #000;
+		font-weight: 600;
+	}
+	
+	.btn-filter + label:before{
+		background: transparent url("images/sprites.png") -761px -10px no-repeat;	
+	}	
+
+	.btn-filter:checked + label{
+		background: #ebebed;
+		font-size: 18px;	
+	}
+
+	.btn-filter:checked + label:before{
+		content: "\2716";
+		background: #ebebed;
+		color: #000;	
+	}
+
+	.btn-filter:checked + label:hover{
+		background: #cf453c;
+	}
+
+	.btn-filter:checked + label:hover:before{
+		color: #fff;
+		background: #cf453c;
+	}
+	
+	.b-filter-body__reset_mob{
+		background: #d5d5d5;
+	}
 	
 	
 /* Footer */	
 	
 	.footer_sm-form-click-mobile + label:before,
 	.footer_sm-form-click-mobile:indeterminate + label:before{
-		background: #d0d4d8 url("images/sprites.png") -1883px 0px no-repeat;	
+		background: #d0d4d8 url("images/sprites.png") -360px 0px no-repeat;	
 	}
+	
+	.footer_sm-form-click-mobile + label:hover:before,
+	.footer_sm-form-click-mobile:indeterminate + label:hover:before{
+		background: transparent url("images/sprites.png") -360px 0px no-repeat;	
+	}	
 	
 	.back-to-top{
 		text-align: center;
@@ -325,6 +365,11 @@
 
 @media screen and (max-width: 519px) {
 /* Promo */
+
+	.promo-item .promo-item__title a span:last-child {
+		font-size: 40px;
+	}
+
 
 	.catalog-main__item{
 		border-top: 1px solid #ccc;

@@ -1026,7 +1026,7 @@ div.cs-select.cs-active > span:after{
 	padding-top: 11px;
 	padding-bottom: 11px;
     position: absolute;
-    z-index: 100;
+    z-index: 200;
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, visibility 0s 0.2s;
 	transition: opacity 0.2s, visibility 0s 0.2s; 
@@ -1138,6 +1138,10 @@ div.cs-select.cs-active .cs-options {
 	height: 50px;
 	margin-left: 39px;
 	padding-top: 0;
+}
+
+.b-filter-body__reset_mob{
+	display: none;
 }
 
 .b-filter-body__reset{
