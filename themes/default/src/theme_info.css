@@ -266,7 +266,7 @@ a.btn_grey:hover, a.btn_grey:focus,
 
 .btn-menu-click-mobile:checked + label:hover:before,
 .btn-menu-click-mobile:checked + label:focus:before{
-	background: transparent url("images/sprites.png") -780px -9px no-repeat;
+	background: transparent url("images/sprites.png") -1053px -9px no-repeat;
 }
 
 .menu-main__list li{
