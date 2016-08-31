@@ -355,7 +355,7 @@ a.btn_grey:hover, a.btn_grey:focus,
 
 .btn-search-click + label:hover:before,
 .btn-search-click + label:focus:before{
-	background: transparent url("images/sprites.png") -1305px -10px no-repeat;
+	background: transparent url("images/sprites.png") -1247px -10px no-repeat;
 }
 
 .search-click-slide-holder{
@@ -617,6 +617,10 @@ a.purchases-menu__purchases-button:focus{
 
 
 /* --------------- Breadcrumbs --------------- */
+
+.breadcrumbs_theme{
+	line-height: 1.5em;
+}
 
 .breadcrumbs_theme a{
 	color: #666;
@@ -1159,7 +1163,7 @@ a.purchases-menu__purchases-button:focus{
 /* --------  Profile Menu ------- */
 
 .profile-menu{
-	border-bottom: 2px solid #efece7;
+
 }
 
 .profile-menu__list{
@@ -1181,46 +1185,51 @@ a.purchases-menu__purchases-button:focus{
 .profile-menu__item a:hover,
 .profile-menu__item a:focus{
 	color: #0092C4;
+	background: #ffb800;
 }
 
 .profile-menu__item .active{
-	border-bottom: 2px solid #00c4e0;
+	background: #ffb800;
 }
 
 .profile-menu__item-purchases:before{
-	background: transparent url("images/sprites.png") -505px -10px no-repeat;		
+	background: transparent url("images/sprites.png") -1366px -10px no-repeat;		
 }
 
 .profile-menu__item-purchases:hover:before,
-.profile-menu__item-purchases:focus:before{
-	background: transparent url("images/sprites.png") -2502px -10px no-repeat;		
+.profile-menu__item-purchases:focus:before,
+.profile-menu__item-purchases.active:before{
+	background: transparent url("images/sprites.png") -1334px -10px no-repeat;		
 }
 
 .profile-menu__item-cart:before{
-	background: transparent url("images/sprites.png") -475px -10px no-repeat;		
+	background: transparent url("images/sprites.png") -1548px -10px no-repeat;		
 }
 
 .profile-menu__item-cart:hover:before,
-.profile-menu__item-cart:focus:before{
-	background: transparent url("images/sprites.png") -2472px -10px no-repeat;		
+.profile-menu__item-cart:focus:before,
+.profile-menu__item-cart.active:before{
+	background: transparent url("images/sprites.png") -1520px -10px no-repeat;		
 }
 
 .profile-menu__item-bookmarks:before{
-	background: transparent url("images/sprites.png") -450px -10px no-repeat;		
+	background: transparent url("images/sprites.png") -1187px -10px no-repeat;		
 }
 
 .profile-menu__item-bookmarks:hover:before,
-.profile-menu__item-bookmarks:focus:before{
-	background: transparent url("images/sprites.png") -2447px -10px no-repeat;		
+.profile-menu__item-bookmarks:focus:before,
+.profile-menu__item-bookmarks.active:before{
+	background: transparent url("images/sprites.png") -1157px -10px no-repeat;		
 }
 
 .profile-menu__item-info:before{
-	background: transparent url("images/sprites.png") -426px -10px no-repeat;		
+	background: transparent url("images/sprites.png") -1105px -10px no-repeat;		
 }
 
 .profile-menu__item-info:hover:before,
-.profile-menu__item-info:focus:before{
-	background: transparent url("images/sprites.png") -2423px -10px no-repeat;		
+.profile-menu__item-info:focus:before,
+.profile-menu__item-info.active:before{
+	background: transparent url("images/sprites.png") -1079px -10px no-repeat;		
 }
 
 
@@ -1459,6 +1468,10 @@ a.catalog-item__del-button.i-buck:focus:before{
 
 .profile-info div{
 	
+}
+
+.profile-info div > span {
+    line-height: 1.4em;
 }
 
 .profile-info div > span:first-child{
@@ -1758,7 +1771,8 @@ a.catalog-item__del-button.i-buck:focus:before{
 	text-transform: uppercase;
     font-size: 15px;
     color: #000;
-    font-weight: 200;	
+    font-weight: 200;
+	line-height: 1.3em;    	
 }
 
 .search-cat-name{
