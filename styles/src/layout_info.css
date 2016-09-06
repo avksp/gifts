@@ -2274,14 +2274,15 @@ a.catalog-item__del-button.i-buck:before{
 .checkout-header__step li {
     display: block;
     float: left;
+    width: 22%;    
 }
 
 .checkout-header__step li:nth-child(2) {
-    width: 265px;
+    width: 37%;
 }
 
 .checkout-header__step li:nth-child(3) {
-    width: 280px;
+    width: 41%;
 }
 
 .checkout-header__step li span{
@@ -2295,6 +2296,10 @@ a.catalog-item__del-button.i-buck:before{
     height: 2px;
     position: relative;
     margin-top: 10px;
+}
+
+.checkout-content input{
+	display: none;
 }
 
 .checkout-step{

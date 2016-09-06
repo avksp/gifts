@@ -1600,6 +1600,10 @@ a.catalog-item__del-button.i-buck:focus:before{
     text-align: right;
 }
 
+.checkout-header__step li:first-child{
+    text-align: left;
+}
+
 .checkout-header__step li span {
     color: #666;
     font-size: 13px;

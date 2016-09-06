@@ -207,6 +207,14 @@ word-break: break-all;
 	border: 0px;
 }
 
+@media screen and (min-width: 760px) and (max-width: 999px) {
+
+	.pkp-payment-method{
+		text-align: justify;
+	}
+}
+
+
 @media screen and (max-width: 759px) {
 
 	.pkp-payment-method__choose{
@@ -216,12 +224,12 @@ word-break: break-all;
 	}
 	
 	.pkp-payment-method__btn + label:after, .pkp-payment-method__btn:indeterminate + label:after {
-		background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHBAMAAADOnLEXAAAAA3NCSVQICAjb4U/gAAAAD1BMVEX///8AAAAAAAAAAAAAAABRO2rwAAAABXRSTlMAM2bu/4FQ14MAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAFnRFWHRDcmVhdGlvbiBUaW1lADA3LzIxLzE26X55nwAAAClJREFUCJljUBZgYGA0YjAxZGAQdgYiAUYgE4iBLJAISBzIBXGAXCAHAG2oBEERpm26AAAAAElFTkSuQmCC') center center no-repeat;
+		background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHAgMAAACuHi+JAAAAA3NCSVQICAjb4U/gAAAADFBMVEX///8AAAAAAAAAAAD4jAJNAAAABHRSTlMAETPdon5khAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwOS8wMi8xNtE0/kwAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAKElEQVQImWMQYGBwYKhgYDrAoMfA3QBEegwMTA92MDAw7HoAJPQbGABpiwbgLeTVtQAAAABJRU5ErkJggg==') center center no-repeat;
 		border-left: 1px solid #d0d4d8;
 	}
 	
 	.pkp-payment-method__btn:checked + label:after{
-		background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHBAMAAADOnLEXAAAAA3NCSVQICAjb4U/gAAAAD1BMVEX///8AAAAAAAAAAAAAAABRO2rwAAAABXRSTlMAM2bu/4FQ14MAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAFnRFWHRDcmVhdGlvbiBUaW1lADA3LzIxLzE26X55nwAAACxJREFUCJljYGAQNmQAAkYTZwEgJexsYgjiGAoDuUAMZDGARISdGZSB8oxGAGGSBEEaRX1HAAAAAElFTkSuQmCC') center center no-repeat;
+		background: #ffb800 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAHAgMAAACuHi+JAAAAA3NCSVQICAjb4U/gAAAADFBMVEX////////////////1pQ5zAAAABHRSTlMAETPdon5khAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwOS8wMi8xNtE0/kwAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAAKklEQVQImWNg0G9gYGDY9YCBgenBDgYG7gY9BgY9IMVQwcB0gEGAgcEBAIT3BuCm8FNIAAAAAElFTkSuQmCC') center center no-repeat;
 	}
 
 	.pkp-payment-method__list{
@@ -233,7 +241,6 @@ word-break: break-all;
 		font-size: 14px;
 		border-bottom: 1px solid #efece7;
 		background: #f7f5f3;
-		overflow: hidden;
 	}
 	
 	.pkp-payment-method__list-item a:hover{

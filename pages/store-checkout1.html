@@ -422,133 +422,129 @@
 						<li class="checkout-step__item">
 							<span class="checkout-step__item-adress active">Доставка и оптлата</span>						
 						</li>						
-						<li class="profile-header__item">
+						<li class="checkout-step__item">
 							<span class="checkout-step__item-conf">Подтверждение</span>
 						</li>
-						<li class="profile-header__item">
+						<li class="checkout-step__item">
 							<span class="checkout-step__item-check">Оформление</span>
 						</li>						
 					</ul>
-					<ul class="checkout-header__step-mobile mobile">
-						<li class="checkout-step__item">
-							<span class="checkout-step__item-step1">1</span>						
-						</li>						
-						<li class="profile-header__item">
-							<span class="checkout-step__item-step2">2</span>
-						</li>
-						<li class="profile-header__item">
-							<span class="checkout-step__item-step3">3</span>
-						</li>
-						<li class="profile-header__item">
-							<span class="checkout-step__item-step4">4</span>
-						</li>
-					</ul>					
 				</div>
 				<!-- /checkout-header -->
-				<!-- checkout-content -->							
+				<!-- checkout-content -->
 				<div class="checkout-content">
-					<div class="checkout-content__step1 checkout-step">
-						<h3>Адрес доставки и получатель</h3>		
-						<div class="profile-info__adress">
-							<input class="profile-info__adress-click hidden checkbox" id="adress-click1" type="checkbox">
-							<label for="adress-click1"></label>						
-							<div class="profile-info__adress-adress">
-								<span>Сибилев Игорь Николаевич</span><span>9040912701</span><span>user@inbox.ru</span>
-								<span>308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+					<input checked="" type="radio" name="checkout-slider" id="checkout_slide1">
+					<input type="radio" name="checkout-slider" id="checkout_slide2">
+					<input type="radio" name="checkout-slider" id="checkout_slide3">
+					<input type="radio" name="checkout-slider" id="checkout_slide4">
+					<div class="checkout-content__active mobile">
+						<label for="checkout_slide1">1</label>
+						<label for="checkout_slide2">2</label>
+						<label for="checkout_slide3">3</label>
+						<label for="checkout_slide4">4</label>
+					</div>					
+					<div class="checkout-content__slides">
+						<div class="checkout-content__over">
+							<div class="checkout-content__inner">					
+								<div class="checkout-content__step1 checkout-step">
+									<h3>Адрес доставки и получатель</h3>		
+									<div class="profile-info__adress">
+										<input class="profile-info__adress-click hidden checkbox" id="adress-click1" type="checkbox">
+										<label for="adress-click1"></label>						
+										<div class="profile-info__adress-adress">
+											<span>Сибилев Игорь Николаевич</span><span>9040912701</span><span>user@inbox.ru</span>
+											<span>308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+										</div>
+										<a href="store-checkout-edit-adress.html" class="i-change checkout-edit-adress"></a>							
+									</div>
+									<div class="profile-info__adress">
+										<input class="profile-info__adress-click hidden checkbox" id="adress-click2" type="checkbox">
+										<label for="adress-click2"></label>						
+										<div class="profile-info__adress-adress">
+											<span>Сибилев Игорь Николаевич</span><span>9040912701</span><span>user@inbox.ru</span>
+											<span>308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+										</div>
+										<a href="store-checkout-edit-adress.html" class="i-change checkout-edit-adress"></a>						
+									</div>
+									<div class="profile-info__adress">
+										<input class="profile-info__adress-click hidden checkbox" id="adress-click3" type="checkbox">
+										<label for="adress-click3"></label>						
+										<div class="profile-info__adress-adress">
+											<span>Сибилев Игорь Николаевич</span><span>9040912701</span><span>user@inbox.ru</span>
+											<span>308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
+										</div>
+										<a href="store-checkout-edit-adress.html" class="i-change checkout-edit-adress"></a>								
+									</div>
+									<div class="profile-info__buttons">
+										<a href="checkout-edit-adress.html" class="">Добавить адрес</a>
+									</div>
+								</div>
+								<div class="checkout-content__step2 checkout-step">
+									<h3>Выберите способ доставки</h3>
+									<div class="checkout-delivery">
+										<input class="checkout-delivery__click hidden checkbox" id="delivery-click1" type="checkbox">
+										<label for="delivery-click1"></label>
+										<div class="checkout-delivery__img"><span class="img-fon"><img src="../images/pages/order/dev-ems.png" title="EMS"></span></div>
+										<div class="checkout-delivery__method">
+											<span class="checkout-delivery__name">EMS Почта России</span>
+											<span class="checkout-delivery__dec">Дата доставки: до 10 сентября.</span>
+										</div>
+										<div class="checkout-delivery__cost"><span>320 руб.</span></div>							
+									</div>
+									<div class="checkout-delivery">
+										<input class="checkout-delivery__click hidden checkbox" id="delivery-click2" type="checkbox">
+										<label for="delivery-click2"></label>
+										<div class="checkout-delivery__img"><span class="img-fon"><img src="../images/pages/order/dev-kur.png" title="EMS"></span></div>
+										<div class="checkout-delivery__method">
+											<span class="checkout-delivery__name">Доставка курьерской службой по Иркутску и ИО</span>
+											<span class="checkout-delivery__dec">Заказ оформленный:- до 18:00 будет доставлен на следующий рабочий день- после 18:00 будет доставлен через один рабочий день.</span>
+										</div>
+										<div class="checkout-delivery__cost"><span>833 руб.</span></div>							
+									</div>
+								</div>
+								<div class="checkout-content__step3 checkout-step">
+									<h3>Выберите способ оплаты</h3>
+									<div class="checkout-payment">
+										<input class="checkout-payment__click hidden checkbox" id="payment-click1" type="checkbox">
+										<label for="payment-click1"></label>
+										<div class="checkout-payment__img"><span class="img-fon"><img src="../images/pages/order/pay-nal.png" title=""></span></div>
+										<div class="checkout-payment__method">
+											<span class="checkout-delivery__name">Оплата при получении</span>
+											<span class="checkout-delivery__dec">Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</span>
+										</div>
+									</div>
+									<div class="checkout-payment">
+										<input class="checkout-payment__click hidden checkbox" id="payment-click2" type="checkbox">
+										<label for="payment-click2"></label>
+										<div class="checkout-payment__img"><span class="img-fon"><img src="../images/pages/order/pay-z.png" title=""></span></div>
+										<div class="checkout-payment__method">
+											<span class="checkout-delivery__name">Z-Paymentafdssssdddddddddddddddddddddddddddddddddddddddddddddddddddd</span>
+											<span class="checkout-delivery__dec"></span>
+										</div>
+									</div>
+									<div class="checkout-payment">
+										<input class="checkout-payment__click hidden checkbox" id="payment-click3" type="checkbox">
+										<label for="payment-click3"></label>
+										<div class="checkout-payment__img"><span class="img-fon"><img src="../images/pages/order/pay-bank.png" title=""></span></div>
+										<div class="checkout-payment__method">
+											<span class="checkout-delivery__name">Оплата банковской картой</span>
+											<span class="checkout-delivery__dec">ывмммммммммммммммммммммммммммммммммммфцукпцупмицукпмцпцууууууууууууффцццу.</span>
+										</div>
+									</div>
+								</div>
 							</div>
-							<a href="store-checkout-edit-adress.html" class="i-change checkout-edit-adress"></a>							
 						</div>
-						<div class="profile-info__adress">
-							<input class="profile-info__adress-click hidden checkbox" id="adress-click2" type="checkbox">
-							<label for="adress-click2"></label>						
-							<div class="profile-info__adress-adress">
-								<span>Сибилев Игорь Николаевич</span><span>9040912701</span><span>user@inbox.ru</span>
-								<span>308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
-							</div>
-							<a href="store-checkout-edit-adress.html" class="i-change checkout-edit-adress"></a>						
-						</div>
-						<div class="profile-info__adress">
-							<input class="profile-info__adress-click hidden checkbox" id="adress-click3" type="checkbox">
-							<label for="adress-click3"></label>						
-							<div class="profile-info__adress-adress">
-								<span>Сибилев Игорь Николаевич</span><span>9040912701</span><span>user@inbox.ru</span>
-								<span>308000, Белгородская область, Белгород, ул. Попова, 76 а</span>
-							</div>
-							<a href="store-checkout-edit-adress.html" class="i-change checkout-edit-adress"></a>								
-						</div>
-						<div class="profile-info__buttons">
-							<a href="checkout-edit-adress.html" class="">Добавить адрес</a>
-						</div>
-						<div class="checkout__buttons mobile">
-							<a href="javascript:void(0);" class="btn btn_yellow checkout-step1-button">Продолжить</a>								
-							<a href="store-checkout-add-adress.html" class="btn btn_grey">Добавить адрес</a>
-						</div>												
 					</div>
-					<div class="checkout-content__step2 checkout-step">
-						<h3>Выберите способ доставки</h3>
-						<div class="checkout-delivery">
-							<input class="checkout-delivery__click hidden checkbox" id="delivery-click1" type="checkbox">
-							<label for="delivery-click1"></label>
-							<div class="checkout-delivery__img"><span class="img-fon"><img src="../images/pages/order/dev-ems.png" title="EMS"></span></div>
-							<div class="checkout-delivery__method">
-								<span class="checkout-delivery__name">EMS Почта России</span>
-								<span class="checkout-delivery__dec">Дата доставки: до 10 сентября.</span>
-							</div>
-							<div class="checkout-delivery__cost"><span>320 руб.</span></div>							
-						</div>
-						<div class="checkout-delivery">
-							<input class="checkout-delivery__click hidden checkbox" id="delivery-click2" type="checkbox">
-							<label for="delivery-click2"></label>
-							<div class="checkout-delivery__img"><span class="img-fon"><img src="../images/pages/order/dev-kur.png" title="EMS"></span></div>
-							<div class="checkout-delivery__method">
-								<span class="checkout-delivery__name">Доставка курьерской службой по Иркутску и ИО</span>
-								<span class="checkout-delivery__dec">Заказ оформленный:- до 18:00 будет доставлен на следующий рабочий день- после 18:00 будет доставлен через один рабочий день.</span>
-							</div>
-							<div class="checkout-delivery__cost"><span>833 руб.</span></div>							
-						</div>
-						<div class="checkout__buttons mobile">
-							<a href="javascript:void(0);" class="btn btn_yellow checkout-step2-button">Продолжить</a>								
-							<a href="javascript:void(0);" class="btn btn_greys">Вернуться</a>
-						</div>											
-					</div>
-					<div class="checkout-content__step3 checkout-step">
-						<h3>Выберите способ оплаты</h3>
-						<div class="checkout-payment">
-							<input class="checkout-payment__click hidden checkbox" id="payment-click1" type="checkbox">
-							<label for="payment-click1"></label>
-							<div class="checkout-payment__img"><span class="img-fon"><img src="../images/pages/order/pay-nal.png" title=""></span></div>
-							<div class="checkout-payment__method">
-								<span class="checkout-delivery__name">Оплата при получении</span>
-								<span class="checkout-delivery__dec">Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</span>
-							</div>
-						</div>
-						<div class="checkout-payment">
-							<input class="checkout-payment__click hidden checkbox" id="payment-click2" type="checkbox">
-							<label for="payment-click2"></label>
-							<div class="checkout-payment__img"><span class="img-fon"><img src="../images/pages/order/pay-z.png" title=""></span></div>
-							<div class="checkout-payment__method">
-								<span class="checkout-delivery__name">Z-Paymentafdssssdddddddddddddddddddddddddddddddddddddddddddddddddddd</span>
-								<span class="checkout-delivery__dec"></span>
-							</div>
-						</div>
-						<div class="checkout-payment">
-							<input class="checkout-payment__click hidden checkbox" id="payment-click3" type="checkbox">
-							<label for="payment-click3"></label>
-							<div class="checkout-payment__img"><span class="img-fon"><img src="../images/pages/order/pay-bank.png" title=""></span></div>
-							<div class="checkout-payment__method">
-								<span class="checkout-delivery__name">Оплата банковской картой</span>
-								<span class="checkout-delivery__dec">ывмммммммммммммммммммммммммммммммммммфцукпцупмицукпмцпцууууууууууууффцццу.</span>
-							</div>
-						</div>
-						<div class="checkout__buttons mobile">
-							<a href="javascript:void(0);" class="btn btn_yellow checkout-step3-button">Продолжить</a>								
-							<a href="javascript:void(0);" class="btn btn_greys">Вернуться</a>
-						</div>																														
+					<div class="checkout-content__ctrl mobile">
+						<label for="checkout_slide1" class="btn btn_greys">Вернуться</label>
+						<label for="checkout_slide2" class="btn btn_yellow">Продолжить</label>
+						<label for="checkout_slide3" class="btn btn_yellow">Продолжить</label>
+						<label for="checkout_slide2" class="btn btn_greys">Вернуться</label>
 					</div>
 					<div class="checkout__buttons">
 						<a href="javascript:void(0);" class="btn btn_greys">Отмена</a>						
 						<a href="javascript:void(0);" class="btn btn_yellow checkout-button">Продолжить</a>								
-					</div>															
+					</div>					
 				</div>
 				<!-- /checkout-content -->				
 			</div>

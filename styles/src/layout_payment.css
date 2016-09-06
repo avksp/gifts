@@ -290,6 +290,14 @@
 
 @media screen and (min-width: 760px) and (max-width: 999px) {
 
+	#pkp-container{
+		width: 100%;
+	}
+
+	.pkp-payment-method{
+		width: 82%;
+	}
+
 	.pkp-payment-method__item:nth-child(2n+1){
 		margin-right: 0;
 	}
@@ -301,10 +309,15 @@
 	.pkp-payment-method__item:nth-child(2n+2) .pkp-tooltip__content:after{
 	  left: 201px;
 	}	
-	
+
 }
 
 @media screen and (max-width: 759px) {
+
+	#pkp-container{
+		width: 100%;
+	}
+
 	.pkp-form__label {
 		display: block;
 		width: 100%;
@@ -341,6 +354,11 @@
 		right: 0;
 	}
 
+	.pkp-payment-method__btn:checked + .pkp-payment-method__choose:after{
+		height: 38px;
+		top: 0;
+	}
+
 	.pkp-payment-method__list{
 		display: none;
 	}
@@ -358,11 +376,14 @@
 	.pkp-payment-method__list-item a{
 		width: 100%;
 		height: 51px;
-		padding: 20px;
+		padding: 20px 20px 10px 20px;
 		display: block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;		
+		overflow: hidden;		
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		word-break: break-all;
+		text-overflow: ellipsis;
 	}
 
 	.pkp-payment-method__item{
@@ -370,7 +391,10 @@
 		margin: 20px auto;
 		width: 300px;
 	}
-
+	
+	.pkp-payment-method__item:nth-child(3n+1) {
+		margin-right: auto;
+	}
 	.pkp-payment-method__item.active{
 		display: block;
 	}
@@ -422,6 +446,12 @@
 	.pkp-btns-holder{
 		width: 100%;
 		margin-top: 45px;		
+	}
+
+	.pkp-btns-holder a{
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;		
 	}
 
 	.pkp-btn_pay{
