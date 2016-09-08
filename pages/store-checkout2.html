@@ -429,24 +429,20 @@
 							<span class="checkout-step__item-check">Оформление</span>
 						</li>						
 					</ul>
-					<ul class="checkout-header__step-mobile mobile">
-						<li class="checkout-step__item">
-							<span class="checkout-step__item-step1">1</span>						
-						</li>						
-						<li class="profile-header__item">
-							<span class="checkout-step__item-step2">2</span>
-						</li>
-						<li class="profile-header__item">
-							<span class="checkout-step__item-step3">3</span>
-						</li>
-						<li class="profile-header__item">
-							<span class="checkout-step__item-step4">4</span>
-						</li>
-					</ul>					
 				</div>
 				<!-- /checkout-header -->
 				<!-- checkout-content -->							
 				<div class="checkout-content">
+					<input type="radio" name="checkout-slider" id="checkout_slide1">
+					<input type="radio" name="checkout-slider" id="checkout_slide2">
+					<input type="radio" name="checkout-slider" id="checkout_slide3">
+					<input checked="" type="radio" name="checkout-slider" id="checkout_slide4">
+					<div class="checkout-content__active mobile">
+						<label for="checkout_slide4">1</label>
+						<label for="checkout_slide4">2</label>
+						<label for="checkout_slide4">3</label>
+						<label for="checkout_slide4">4</label>
+					</div>					
 					<div class="checkout-content__step4 checkout-step">
 						<div class="checkout-cart">
 							<h3>Ваши покупки</h3>

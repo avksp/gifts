@@ -531,6 +531,14 @@
 		border-bottom: 0px;
 	}
 	
+	.checkout-cart__cost {
+		text-align: left;
+	}
+
+	.checkout-cart-footer .price__rubl {
+		font-weight: 800;
+	}
+	
 /* Footer */	
 	
 	.footer_sm-form-click-mobile + label:before,

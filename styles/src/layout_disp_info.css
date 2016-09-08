@@ -1971,7 +1971,61 @@
 		-moz-transition: opacity 0.2s ease-out;
 		-o-transition: opacity 0.2s ease-out;
 		transition: opacity 0.2s ease-out;
+	}
+
+	.checkout-cart__item {
+		height: auto;
+		padding-bottom: 20px;
+	}
+		
+	.checkout-cart__title {
+		width: 78%;
+	}
+	
+	.checkout-cart__qty {
+		width: 78%;
+	}
+
+	.checkout-cart__cost {
+		width: 76%;
+		margin-left: 0;
+	}
+
+	.checkout-delivery	label{
+		float: left;
+	}
+	
+	.checkout-delivery__img {
+		display: block;
+		float: left;
 	}	
+
+	.checkout-delivery__method {
+		width: 85%;	
+		display: block;
+		float: left;
+	}
+
+	.checkout-delivery__cost {
+		display: block;
+		width: 15%;
+		margin-left: 0;
+		float: right;
+		margin-top: -50px;		
+	}
+	
+	.checkout-delivery:after {
+		content: "."; /* добавить содержимое: "." */
+	    display: block;  /* сделать блоком, т.к. inline не может иметь clear */
+	  clear: both;  /* с обеих сторон clear */
+	  visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+	  height: 0;  /* сделать высоту 0, чтобы не занимал место */
+	}	
+
+
+	.profile-info__adress-adress {
+		margin-left: 0;
+	}
 
 /* Payment */
 
@@ -2580,42 +2634,23 @@
 	.profile-info__adress-adress {
 		width: 80%;
 	}	
-	
-	.checkout-delivery	label{
-		float: left;
-	}
-	
-	.checkout-delivery__img {
-		display: block;
-		float: left;
-	}	
 
+	.checkout-cart__img {
+		margin: 0 15px 30px 0;
+	}
+		
 	.checkout-delivery__method {
 		width: 77%;
-		display: block;
-		float: left;
 	}
 
 	.checkout-delivery__cost {
-		display: block;
 		width: 20%;
-		margin-left: 0;
-		float: right;
-		margin-top: -50px;		
 	}
 	
-	.checkout-delivery:after {
-		content: "."; /* добавить содержимое: "." */
-	    display: block;  /* сделать блоком, т.к. inline не может иметь clear */
-	  clear: both;  /* с обеих сторон clear */
-	  visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
-	  height: 0;  /* сделать высоту 0, чтобы не занимал место */
-	}	
-
 	.checkout-payment__method {
 		width: 100%;
     }
-	
+
 /* Footer */	
 
 	.footer_theme .container_theme > div{
